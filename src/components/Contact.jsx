@@ -42,7 +42,7 @@ const Contact = () => {
     const formData = new FormData(e.target);
 
     try {
-      const response = await fetch('https://personal-portfolio-pink-delta-18.vercel.app/submit-form', {
+      const response = await fetch('https://portfolio-contact-form-backend-production.up.railway.app/send-email', {
         method: 'POST',
         body: JSON.stringify({
           name: formData.get('name'),
