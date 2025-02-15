@@ -42,7 +42,7 @@ const Contact = () => {
     const formData = new FormData(e.target);
 
     try {
-      const response = await fetch('https://your-backend-url/submit-form', {
+      const response = await fetch('https://personal-portfolio-pink-delta-18.vercel.app/submit-form', {
         method: 'POST',
         body: JSON.stringify({
           name: formData.get('name'),
@@ -98,7 +98,7 @@ const Contact = () => {
 
         <form
           onSubmit={handleSubmit}
-          action="https://getform.io/f/bxowjdxa"
+          // action="https://getform.io/f/bxowjdxa"
           method="POST"
           className="xl:pl-10 2xl:pl-20"
         >
